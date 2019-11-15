@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://localhost:6240/Application#!/users -->
+<html lang="en" data-ng-app="app" dir="" class="ng-scope"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button[not:disabled]:hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel[not:disabled]:hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger[not:disabled]:hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:scroll;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+    <title>AbpZeroTemplate</title>
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+
+    <link rel="shortcut icon" href="http://localhost:6240/favicon.ico">
+
+    <link href="./AbpZeroTemplate_files/fonts-open-sans.css" rel="stylesheet" type="text/css">
+
+    <link href="./AbpZeroTemplate_files/font-awesome.min.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/simple-line-icons.min.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/famfamfam-flags.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/bootstrap.min.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/uniform.default.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/morris.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/style.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/toastr.min.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/ui-grid.min.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/daterangepicker.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/bootstrap-select.min.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/bootstrap-switch.min.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/jquery.Jcrop.min.css" rel="stylesheet">
+
+    <link id="ng_load_plugins_before">
+    <link href="./AbpZeroTemplate_files/components-md.min.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/plugins-md.min.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/layout.min.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/light.min.css" rel="stylesheet">
+
+    <link href="./AbpZeroTemplate_files/core.css" rel="stylesheet">
+
+    <link href="./AbpZeroTemplate_files/app.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/detailModal.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/chatbar.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/header.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/sidebar.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/index.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/index(1).css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/changePicture.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/createOrEditModal.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/index(2).css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/loginAttemptsModal.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/featureTree.css" rel="stylesheet">
+<link href="./AbpZeroTemplate_files/index(3).css" rel="stylesheet">
+
+
+    <script type="text/javascript">
+        
+        var abp = abp || {}; abp.appPath = '/';
+    </script>
+<style type="text/css"></style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<!-- DOC: Apply "page-header-fixed-mobile" and "page-footer-fixed-mobile" class to body element to force fixed header or footer in mobile devices -->
+<!-- DOC: Apply "page-sidebar-closed" class to the body and "page-sidebar-menu-closed" class to the sidebar menu element to hide the sidebar by default -->
+<!-- DOC: Apply "page-sidebar-hide" class to the body to make the sidebar completely hidden on toggle -->
+<!-- DOC: Apply "page-sidebar-closed-hide-logo" class to the body element to make the logo hidden on sidebar toggle -->
+<!-- DOC: Apply "page-sidebar-hide" class to body element to completely hide the sidebar on sidebar toggle -->
+<!-- DOC: Apply "page-sidebar-fixed" class to have fixed sidebar -->
+<!-- DOC: Apply "page-footer-fixed" class to the body element to have fixed footer -->
+<!-- DOC: Apply "page-sidebar-reversed" class to put the sidebar on the right side -->
+<!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
+<body ng-controller="common.views.layout as vm" class="page-md page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid page-sidebar-closed-hide-logo ng-scope" ng-class="{&#39;page-sidebar-closed&#39;: settings.layout.pageSidebarClosed}" style="">
+
+    <div ng-spinner-bar="" class="page-spinner-bar hide">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+
+    <!-- ngInclude: '~/App/common/views/layout/header.cshtml' --><div data-ng-include="&#39;~/App/common/views/layout/header.cshtml&#39;" data-ng-controller="common.views.layout.header as vm" class="page-header navbar navbar-fixed-top md-shadow-zero-light ng-scope"><div class="page-header-inner ng-scope">
+    <div class="page-logo">
+        <a href="http://localhost:6240/" target="_blank">
+            <!-- ngIf: vm.tenant && vm.tenant.logoId -->
+            <!-- ngIf: !vm.tenant || !vm.tenant.logoId --><img ng-if="!vm.tenant || !vm.tenant.logoId" src="./AbpZeroTemplate_files/app-logo-on-light.png" alt="logo" class="logo-default ng-scope" width="168" height="33"><!-- end ngIf: !vm.tenant || !vm.tenant.logoId -->
+        </a>
+        <div class="menu-toggler sidebar-toggler">
+            <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+        </div>
+    </div>
+    <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+    </a>
+    <div class="page-top">
+        <div class="top-menu">
+            <ul class="nav navbar-nav pull-right">
+                <!-- ngIf: vm.languages.length > 1 --><li class="dropdown dropdown-language ng-scope" ng-if="vm.languages.length &gt; 1">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                        <i ng-class="vm.currentLanguage.icon" class="famfamfam-flag-cn"></i>
+                        <span class="langname ng-binding">
+                            简体中文
+                        </span>
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <!-- ngRepeat: language in vm.languages --><!-- ngIf: vm.currentLanguage.name !== language.name --><li ng-repeat="language in vm.languages" ng-if="vm.currentLanguage.name !== language.name" class="ng-scope">
+                            <a ng-click="vm.changeLanguage(language.name)" href="http://localhost:6240/Application#" class="ng-binding">
+                                <i ng-class="language.icon" class="famfamfam-flag-gb"></i> English
+                            </a>
+                        </li><!-- end ngIf: vm.currentLanguage.name !== language.name --><!-- end ngRepeat: language in vm.languages --><!-- ngIf: vm.currentLanguage.name !== language.name --><li ng-repeat="language in vm.languages" ng-if="vm.currentLanguage.name !== language.name" class="ng-scope">
+                            <a ng-click="vm.changeLanguage(language.name)" href="http://localhost:6240/Application#" class="ng-binding">
+                                <i ng-class="language.icon" class="famfamfam-flag-es"></i> Español
+                            </a>
+                        </li><!-- end ngIf: vm.currentLanguage.name !== language.name --><!-- end ngRepeat: language in vm.languages --><!-- ngIf: vm.currentLanguage.name !== language.name --><li ng-repeat="language in vm.languages" ng-if="vm.currentLanguage.name !== language.name" class="ng-scope">
+                            <a ng-click="vm.changeLanguage(language.name)" href="http://localhost:6240/Application#" class="ng-binding">
+                                <i ng-class="language.icon" class="famfamfam-flag-tr"></i> Türkçe
+                            </a>
+                        </li><!-- end ngIf: vm.currentLanguage.name !== language.name --><!-- end ngRepeat: language in vm.languages --><!-- ngIf: vm.currentLanguage.name !== language.name --><!-- end ngRepeat: language in vm.languages -->
+                    </ul>
+                </li><!-- end ngIf: vm.languages.length > 1 -->
+                <!-- BEGIN NOTIFICATION DROPDOWN -->
+                <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                <li class="dropdown dropdown-extended dropdown-notification dropdown-dark" id="header_notification_bar">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                        <i class="icon-bell"></i>
+                        <!-- ngIf: vm.unreadNotificationCount -->
+                    </a>
+                    <ul class="dropdown-menu" id="UserNotificationDropdown">
+                        <li class="external notifications-header">
+                            <div class="text-left">
+                                <!-- ngIf: vm.unreadNotificationCount -->
+                                <a class="pull-right" href="http://localhost:6240/Application" ng-click="vm.openNotificationSettingsModal()">比赛日程设置</a>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- ngRepeat: notification in vm.notifications -->
+                            <!-- ngIf: !vm.notifications.length --><div class="notification-empty-text ng-scope" ng-if="!vm.notifications.length">
+                                There is no notification.
+                            </div><!-- end ngIf: !vm.notifications.length -->
+                        </li>
+                        <!-- ngIf: vm.notifications.length -->
+                    </ul>
+                </li>
+                <!-- END NOTIFICATION DROPDOWN -->
+                <li class="separator hide"> </li>
+
+                <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                <li class="dropdown dropdown-user dropdown-dark">
+                    <a href="http://localhost:6240/Application#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" title="" aria-expanded="false">
+                        <span class="username username-hide-on-mobile ng-binding">
+                            <!-- ngIf: vm.isImpersonatedLogin --> .\admin
+                        </span>
+                        <img id="HeaderProfilePicture" alt="" class="img-circle" src="./AbpZeroTemplate_files/GetProfilePicture">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-default">
+                        <!-- ngIf: vm.isImpersonatedLogin -->
+
+                        <!-- ngIf: vm.isImpersonatedLogin -->
+
+                        <li style="
+    display: none;
+">
+                            <a href="http://localhost:6240/Application"><i class="icon-link"></i> Linked accounts</a>
+                        </li>
+                        
+                        <!-- ngRepeat: linkedUser in vm.recentlyUsedLinkedUsers -->
+                        <!-- ngIf: vm.recentlyUsedLinkedUsers.length > 0 -->
+                        <li class="submenu" style="
+    display: none;
+">
+                            <a href="http://localhost:6240/Application" ng-click="vm.manageLinkedAccounts()">
+                                <i class="icon-settings"></i> Manage accounts
+                            </a>
+                        </li>
+                        
+                        <li class="divider"></li>
+
+
+                        <li>
+                            <a href="http://localhost:6240/Application" ng-click="vm.changePassword()"><i class="icon-key"></i> 修改密码</a>
+                        </li>
+                        <li style="
+    display: none;
+">
+                            <a href="http://localhost:6240/Application" ng-click="vm.showLoginAttempts()" style="
+    display: nono;
+"><i class="icon-shield"></i> Login attempts</a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:6240/Application" ng-click="vm.changePicture()"><i class="icon-user"></i> 修改头像</a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:6240/Application" ng-click="vm.editMySettings()"><i class="icon-settings"></i> 我</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="http://localhost:6240/Account/Logout"><i class="icon-logout"></i> 注销</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                    <!-- BEGIN QUICK SIDEBAR TOGGLER -->
+                    <li class="dropdown dropdown-extended quick-sidebar-toggler">
+                        <span class="sr-only">Toggle Quick Sidebar</span>
+                        <i class="icon-speech"></i>
+                        <!-- ngIf: vm.unreadChatMessageCount -->
+                    </li>
+                    <!-- END QUICK SIDEBAR TOGGLER -->
+            </ul>
+        </div>
+    </div>
+</div></div>
+
+    <div class="clearfix">
+    </div>
+
+    <div class="page-container">
+        <!-- ngInclude: '~/App/common/views/layout/sidebar.cshtml' --><div data-ng-include="&#39;~/App/common/views/layout/sidebar.cshtml&#39;" data-ng-controller="common.views.layout.sidebar as vm" class="page-sidebar-wrapper ng-scope"><div class="page-sidebar navbar-collapse collapse ng-scope">
+    <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+    <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+    <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+    <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+    <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+    <!-- ngIf: vm.menu.items.length --><ul class="page-sidebar-menu ng-scope" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" ng-class="{&#39;page-sidebar-menu-closed&#39;: settings.layout.pageSidebarClosed}" ng-if="vm.menu.items.length">
+        <!-- Menu Level 1 -->
+        <!-- ngRepeat: menuItem in vm.menu.items --><li class="nav-item ng-scope start" ng-repeat="menuItem in vm.menu.items" ui-sref-active="active" ng-class="{&#39;start&#39;:$first}">
+            <!-- ngIf: !menuItem.items.length --><a ui-sref="host.tenants" ng-if="!menuItem.items.length" class="ng-scope" href="http://localhost:6240/Application#!/host/tenants">
+                <i class="icon-globe"></i>
+                <span class="title ng-binding">运动项目管理</span>
+            </a><!-- end ngIf: !menuItem.items.length -->
+            <!-- ngIf: menuItem.items.length -->
+            <!-- ngIf: menuItem.items.length -->
+        </li><!-- end ngRepeat: menuItem in vm.menu.items --><li class="nav-item ng-scope" ng-repeat="menuItem in vm.menu.items" ui-sref-active="active" ng-class="{&#39;start&#39;:$first}">
+            <!-- ngIf: !menuItem.items.length --><a ui-sref="host.editions" ng-if="!menuItem.items.length" class="ng-scope" href="http://localhost:6240/Application#!/host/editions">
+                <i class="icon-grid"></i>
+                <span class="title ng-binding">成绩管理</span>
+            </a><!-- end ngIf: !menuItem.items.length -->
+            <!-- ngIf: menuItem.items.length -->
+            <!-- ngIf: menuItem.items.length -->
+        </li><!-- end ngRepeat: menuItem in vm.menu.items --><li class="nav-item ng-scope open active" ng-repeat="menuItem in vm.menu.items" ui-sref-active="active" ng-class="{&#39;start&#39;:$first}">
+            <!-- ngIf: !menuItem.items.length -->
+            <!-- ngIf: menuItem.items.length --><a href="javascript:;" class="auto ng-scope" ng-if="menuItem.items.length">
+                <i class="icon-wrench"></i>
+                <span class="title ng-binding">管理</span>
+                <span class="arrow open"></span>
+            <span class="selected"></span></a><!-- end ngIf: menuItem.items.length -->
+            <!-- ngIf: menuItem.items.length --><ul class="sub-menu ng-scope" ng-if="menuItem.items.length" style="display: block;">
+                <!-- Menu Level 2 -->
+                <!-- ngRepeat: childMenuItem in menuItem.items --><li class="nav-item ng-scope start" ng-repeat="childMenuItem in menuItem.items" ui-sref-active="active" ng-class="{&#39;start&#39;:$first}">
+                    <!-- ngIf: !childMenuItem.items.length --><a ui-sref="roles" ng-if="!childMenuItem.items.length" class="ng-scope" href="http://localhost:6240/Application#!/roles">
+                        <i class="icon-briefcase"></i>
+                        <span class="title ng-binding">角色</span>
+                    </a><!-- end ngIf: !childMenuItem.items.length -->
+                    <!-- ngIf: childMenuItem.items.length -->
+                    <!-- ngIf: childMenuItem.items.length -->
+                </li><!-- end ngRepeat: childMenuItem in menuItem.items --><li class="nav-item ng-scope active" ng-repeat="childMenuItem in menuItem.items" ui-sref-active="active" ng-class="{&#39;start&#39;:$first}">
+                    <!-- ngIf: !childMenuItem.items.length --><a ui-sref="users" ng-if="!childMenuItem.items.length" class="ng-scope" href="http://localhost:6240/Application#!/users">
+                        <i class="icon-users"></i>
+                        <span class="title ng-binding">用户</span>
+                    </a><!-- end ngIf: !childMenuItem.items.length -->
+                    <!-- ngIf: childMenuItem.items.length -->
+                    <!-- ngIf: childMenuItem.items.length -->
+                </li><!-- end ngRepeat: childMenuItem in menuItem.items --><li class="nav-item ng-scope" ng-repeat="childMenuItem in menuItem.items" ui-sref-active="active" ng-class="{&#39;start&#39;:$first}">
+                    <!-- ngIf: !childMenuItem.items.length --><a ui-sref="languages" ng-if="!childMenuItem.items.length" class="ng-scope" href="http://localhost:6240/Application#!/languages">
+                        <i class="icon-flag"></i>
+                        <span class="title ng-binding">运动报名</span>
+                    </a><!-- end ngIf: !childMenuItem.items.length -->
+                    <!-- ngIf: childMenuItem.items.length -->
+                    <!-- ngIf: childMenuItem.items.length -->
+                </li><!-- end ngRepeat: childMenuItem in menuItem.items --><li class="nav-item ng-scope" ng-repeat="childMenuItem in menuItem.items" ui-sref-active="active" ng-class="{&#39;start&#39;:$first}">
+                    <!-- ngIf: !childMenuItem.items.length --><a ui-sref="auditLogs" ng-if="!childMenuItem.items.length" class="ng-scope" href="http://localhost:6240/Application#!/auditLogs">
+                        <i class="icon-lock"></i>
+                        <span class="title ng-binding">报名信息管理</span>
+                    </a><!-- end ngIf: !childMenuItem.items.length -->
+                    <!-- ngIf: childMenuItem.items.length -->
+                    <!-- ngIf: childMenuItem.items.length -->
+                </li><!-- end ngRepeat: childMenuItem in menuItem.items --><li class="nav-item ng-scope" ng-repeat="childMenuItem in menuItem.items" ui-sref-active="active" ng-class="{&#39;start&#39;:$first}">
+                    <!-- ngIf: !childMenuItem.items.length --><a ui-sref="host.settings" ng-if="!childMenuItem.items.length" class="ng-scope" href="http://localhost:6240/Application#!/host/settings">
+                        <i class="icon-settings"></i>
+                        <span class="title ng-binding">比赛日程设置</span>
+                    </a><!-- end ngIf: !childMenuItem.items.length -->
+                    <!-- ngIf: childMenuItem.items.length -->
+                    <!-- ngIf: childMenuItem.items.length -->
+                </li><!-- end ngRepeat: childMenuItem in menuItem.items -->
+            </ul><!-- end ngIf: menuItem.items.length -->
+        </li><!-- end ngRepeat: menuItem in vm.menu.items -->
+    </ul><!-- end ngIf: vm.menu.items.length -->
+</div>   </div>
+        <div class="page-content-wrapper">
+            <div class="page-content" style="min-height: 752px;">
+                <!-- uiView: --><div ui-view="" class="fade-in-up ng-scope"><div ng-controller="common.views.users.index as vm" class="ng-scope">
+    <div class="row margin-bottom-5">
+        <div class="col-xs-6">
+            <div class="page-head">
+                <div class="page-title">
+                    <h1>
+                        <span>用户</span> <small>管理用户及权限.</small>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 text-right">
+            <button class="btn btn-default" ng-click="vm.exportToExcel()"><i class="fa fa-file-excel-o"></i> 导出到Excel</button>
+            <!-- ngIf: vm.permissions.create --><button ng-if="vm.permissions.create" class="btn btn-primary blue ng-scope" ng-click="vm.createUser()"><i class="fa fa-plus"></i> 添加用户</button><!-- end ngIf: vm.permissions.create -->
+        </div>
+    </div>
+    <div class="portlet light margin-bottom-0">
+        <div class="portlet-body">
+            <div class="form">
+                <form class="horizontal-form ng-pristine ng-valid">
+                    <div class="form-body" enter-key="vm.getUsers()">
+                        <div class="row margin-bottom-10">
+                            <div class="col-md-12">
+                                <div class="inputs inputs-full-width">
+                                    <div class="portlet-input">
+                                        <div class="input-group">
+                                            <input ng-model="vm.filterText" auto-focus="" class="form-control ng-pristine ng-valid ng-empty ng-touched" placeholder="搜索..." type="text">
+                                            <span class="input-group-btn">
+                                                <button ng-click="vm.getUsers()" class="btn default" type="submit"><i class="icon-magnifier"></i></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ngIf: vm.advancedFiltersAreShown -->
+                    </div>
+                    <!-- ngIf: vm.advancedFiltersAreShown -->
+                    <div class="row margin-bottom-10">
+                        <div class="col-sm-12">
+                            <!-- ngIf: !vm.advancedFiltersAreShown --><span class="clickable-item text-muted ng-scope" ng-if="!vm.advancedFiltersAreShown" ng-click="vm.advancedFiltersAreShown=!vm.advancedFiltersAreShown"><i class="fa fa-angle-down"></i> 显示高级过滤</span><!-- end ngIf: !vm.advancedFiltersAreShown -->
+                            <!-- ngIf: vm.advancedFiltersAreShown -->
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div busy-if="vm.loading" class="ng-isolate-scope" style="position: static; zoom: 1;">
+                <div ui-i18n="en" class="ui-grid ng-isolate-scope grid1573800442424" ui-grid="vm.userGridOptions" ui-grid-pagination="" ui-grid-resize-columns="" dir=""><!-- TODO (c0bra): add "scoped" attr here, eventually? --><style ui-grid-style="" class="ng-binding">.grid1573800442424 {
+      /* Styles for the grid */
+    }
+
+    .grid1573800442424 .ui-grid-row, .grid1573800442424 .ui-grid-cell, .grid1573800442424 .ui-grid-cell .ui-grid-vertical-bar {
+      height: 30px;
+    }
+
+    .grid1573800442424 .ui-grid-row:last-child .ui-grid-cell {
+      border-bottom-width: 0px;
+    }
+
+    
+    
+
+    /*
+    .ui-grid[dir=rtl] .ui-grid-viewport {
+      padding-left: px;
+    }
+    */
+
+    
+ .grid1573800442424 .ui-grid-coluiGrid-006T { min-width: 120px; max-width: 120px; } .grid1573800442424 .ui-grid-coluiGrid-006U { min-width: 239px; max-width: 239px; } .grid1573800442424 .ui-grid-coluiGrid-006V { min-width: 238px; max-width: 238px; } .grid1573800442424 .ui-grid-coluiGrid-006W { min-width: 238px; max-width: 238px; } .grid1573800442424 .ui-grid-coluiGrid-006X { min-width: 238px; max-width: 238px; } .grid1573800442424 .ui-grid-coluiGrid-006Y { min-width: 238px; max-width: 238px; } .grid1573800442424 .ui-grid-coluiGrid-006Z { min-width: 238px; max-width: 238px; }
+
+ .grid1573800442424 .ui-grid-render-container-body .ui-grid-canvas { width: 1549px; height: 120px; }
+ .grid1573800442424 .ui-grid-render-container-body .ui-grid-header-canvas { width: 1566px; }
+ .grid1573800442424 .ui-grid-render-container-body .ui-grid-header-canvas { height: inherit; }
+ .grid1573800442424 .ui-grid-render-container-body .ui-grid-viewport { width: 1566px; height: 318px; }
+ .grid1573800442424 .ui-grid-render-container-body .ui-grid-header-viewport { width: 1566px; }
+ .grid1573800442424 .ui-grid-render-container-body .ui-grid-footer-canvas { width: 1566px; }
+ .grid1573800442424 .ui-grid-render-container-body .ui-grid-footer-viewport { width: 1566px; }
+.grid1573800442424 .ui-grid-footer-aggregates-row { height: 30px; } .grid1573800442424 .ui-grid-footer-info { height: 30px; }
+ .grid1573800442424 .ui-grid-coluiGrid-006T { min-width: 120px; max-width: 120px; } .grid1573800442424 .ui-grid-coluiGrid-006U { min-width: 239px; max-width: 239px; } .grid1573800442424 .ui-grid-coluiGrid-006V { min-width: 238px; max-width: 238px; } .grid1573800442424 .ui-grid-coluiGrid-006W { min-width: 238px; max-width: 238px; } .grid1573800442424 .ui-grid-coluiGrid-006X { min-width: 238px; max-width: 238px; } .grid1573800442424 .ui-grid-coluiGrid-006Y { min-width: 238px; max-width: 238px; } .grid1573800442424 .ui-grid-coluiGrid-006Z { min-width: 238px; max-width: 238px; }</style><div class="ui-grid-contents-wrapper"><!-- ngIf: grid.options.enableGridMenu --><!-- ngIf: grid.hasLeftContainer() --><div role="grid" ui-grid-one-bind-id-grid="&#39;grid-container&#39;" class="ui-grid-render-container ng-isolate-scope ui-grid-render-container-body" ng-style="{ &#39;margin-left&#39;: colContainer.getMargin(&#39;left&#39;) + &#39;px&#39;, &#39;margin-right&#39;: colContainer.getMargin(&#39;right&#39;) + &#39;px&#39; }" ui-grid-render-container="" container-id="&#39;body&#39;" col-container-name="&#39;body&#39;" row-container-name="&#39;body&#39;" bind-scroll-horizontal="true" bind-scroll-vertical="true" enable-horizontal-scrollbar="grid.options.enableHorizontalScrollbar" enable-vertical-scrollbar="grid.options.enableVerticalScrollbar" id="1573800442424-grid-container" style="margin-left: 0px; margin-right: 0px;"><!-- All of these dom elements are replaced in place --><div role="rowgroup" class="ui-grid-header ng-scope"><!-- theader --><div class="ui-grid-top-panel"><div class="ui-grid-header-viewport"><div class="ui-grid-header-canvas"><div class="ui-grid-header-cell-wrapper" ng-style="colContainer.headerCellWrapperStyle()"><div role="row" class="ui-grid-header-cell-row"><!-- ngRepeat: col in colContainer.renderedColumns track by col.uid --><div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-006T" ng-repeat="col in colContainer.renderedColumns track by col.uid" ui-grid-header-cell="" col="col" render-index="$index"><div role="columnheader" ng-class="{ &#39;sortable&#39;: sortable }" ui-grid-one-bind-aria-labelledby-grid="col.uid + &#39;-header-text &#39; + col.uid + &#39;-sortdir-text&#39;" aria-sort="none" class="ng-scope" aria-labelledby="1573800442424-uiGrid-006T-header-text 1573800442424-uiGrid-006T-sortdir-text"><div role="button" tabindex="0" class="ui-grid-cell-contents ui-grid-header-cell-primary-focus" col-index="renderIndex"><span class="ui-grid-header-cell-label ng-binding" ui-grid-one-bind-id-grid="col.uid + &#39;-header-text&#39;" id="1573800442424-uiGrid-006T-header-text">操作</span> <span ui-grid-one-bind-id-grid="col.uid + &#39;-sortdir-text&#39;" ui-grid-visible="col.sort.direction" aria-label="无序" class="ui-grid-invisible" id="1573800442424-uiGrid-006T-sortdir-text"><i ng-class="{ &#39;ui-grid-icon-up-dir&#39;: col.sort.direction == asc, &#39;ui-grid-icon-down-dir&#39;: col.sort.direction == desc, &#39;ui-grid-icon-blank&#39;: !col.sort.direction }" title="" aria-hidden="true" class="ui-grid-icon-blank"></i> <sub ui-grid-visible="isSortPriorityVisible()" class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span></div><!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false --><div role="button" tabindex="0" ui-grid-one-bind-id-grid="col.uid + &#39;-menu-button&#39;" class="ui-grid-column-menu-button ng-scope" ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false" ng-click="toggleMenu($event)" ng-class="{&#39;ui-grid-column-menu-button-last-col&#39;: isLastCol}" ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel" aria-haspopup="true" id="1573800442424-uiGrid-006T-menu-button" aria-label="列菜单"><i class="ui-grid-icon-angle-down" aria-hidden="true">&nbsp;</i></div><!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false --><div ui-grid-filter=""></div></div></div><!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid --><div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-006U" ng-repeat="col in colContainer.renderedColumns track by col.uid" ui-grid-header-cell="" col="col" render-index="$index"><div role="columnheader" ng-class="{ &#39;sortable&#39;: sortable }" ui-grid-one-bind-aria-labelledby-grid="col.uid + &#39;-header-text &#39; + col.uid + &#39;-sortdir-text&#39;" aria-sort="none" class="ng-scope sortable" aria-labelledby="1573800442424-uiGrid-006U-header-text 1573800442424-uiGrid-006U-sortdir-text"><div role="button" tabindex="0" class="ui-grid-cell-contents ui-grid-header-cell-primary-focus" col-index="renderIndex"><span class="ui-grid-header-cell-label ng-binding" ui-grid-one-bind-id-grid="col.uid + &#39;-header-text&#39;" id="1573800442424-uiGrid-006U-header-text">学号</span> <span ui-grid-one-bind-id-grid="col.uid + &#39;-sortdir-text&#39;" ui-grid-visible="col.sort.direction" aria-label="无序" class="ui-grid-invisible" id="1573800442424-uiGrid-006U-sortdir-text"><i ng-class="{ &#39;ui-grid-icon-up-dir&#39;: col.sort.direction == asc, &#39;ui-grid-icon-down-dir&#39;: col.sort.direction == desc, &#39;ui-grid-icon-blank&#39;: !col.sort.direction }" title="" aria-hidden="true" class="ui-grid-icon-blank"></i> <sub ui-grid-visible="isSortPriorityVisible()" class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span></div><!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false --><div role="button" tabindex="0" ui-grid-one-bind-id-grid="col.uid + &#39;-menu-button&#39;" class="ui-grid-column-menu-button ng-scope" ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false" ng-click="toggleMenu($event)" ng-class="{&#39;ui-grid-column-menu-button-last-col&#39;: isLastCol}" ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel" aria-haspopup="true" id="1573800442424-uiGrid-006U-menu-button" aria-label="列菜单"><i class="ui-grid-icon-angle-down" aria-hidden="true">&nbsp;</i></div><!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false --><div ui-grid-filter=""></div></div></div><!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid --><div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-006V" ng-repeat="col in colContainer.renderedColumns track by col.uid" ui-grid-header-cell="" col="col" render-index="$index"><div role="columnheader" ng-class="{ &#39;sortable&#39;: sortable }" ui-grid-one-bind-aria-labelledby-grid="col.uid + &#39;-header-text &#39; + col.uid + &#39;-sortdir-text&#39;" aria-sort="none" class="ng-scope sortable" aria-labelledby="1573800442424-uiGrid-006V-header-text 1573800442424-uiGrid-006V-sortdir-text"><div role="button" tabindex="0" class="ui-grid-cell-contents ui-grid-header-cell-primary-focus" col-index="renderIndex"><span class="ui-grid-header-cell-label ng-binding" ui-grid-one-bind-id-grid="col.uid + &#39;-header-text&#39;" id="1573800442424-uiGrid-006V-header-text">姓名</span> <span ui-grid-one-bind-id-grid="col.uid + &#39;-sortdir-text&#39;" ui-grid-visible="col.sort.direction" aria-label="无序" class="ui-grid-invisible" id="1573800442424-uiGrid-006V-sortdir-text"><i ng-class="{ &#39;ui-grid-icon-up-dir&#39;: col.sort.direction == asc, &#39;ui-grid-icon-down-dir&#39;: col.sort.direction == desc, &#39;ui-grid-icon-blank&#39;: !col.sort.direction }" title="" aria-hidden="true" class="ui-grid-icon-blank"></i> <sub ui-grid-visible="isSortPriorityVisible()" class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span></div><!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false --><div role="button" tabindex="0" ui-grid-one-bind-id-grid="col.uid + &#39;-menu-button&#39;" class="ui-grid-column-menu-button ng-scope" ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false" ng-click="toggleMenu($event)" ng-class="{&#39;ui-grid-column-menu-button-last-col&#39;: isLastCol}" ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel" aria-haspopup="true" id="1573800442424-uiGrid-006V-menu-button" aria-label="列菜单"><i class="ui-grid-icon-angle-down" aria-hidden="true">&nbsp;</i></div><!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false --><div ui-grid-filter=""></div></div></div><!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid --><div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-006W" ng-repeat="col in colContainer.renderedColumns track by col.uid" ui-grid-header-cell="" col="col" render-index="$index"><div role="columnheader" ng-class="{ &#39;sortable&#39;: sortable }" ui-grid-one-bind-aria-labelledby-grid="col.uid + &#39;-header-text &#39; + col.uid + &#39;-sortdir-text&#39;" aria-sort="none" class="ng-scope sortable" aria-labelledby="1573800442424-uiGrid-006W-header-text 1573800442424-uiGrid-006W-sortdir-text"><div role="button" tabindex="0" class="ui-grid-cell-contents ui-grid-header-cell-primary-focus" col-index="renderIndex"><span class="ui-grid-header-cell-label ng-binding" ui-grid-one-bind-id-grid="col.uid + &#39;-header-text&#39;" id="1573800442424-uiGrid-006W-header-text">邮箱地址</span> <span ui-grid-one-bind-id-grid="col.uid + &#39;-sortdir-text&#39;" ui-grid-visible="col.sort.direction" aria-label="无序" class="ui-grid-invisible" id="1573800442424-uiGrid-006W-sortdir-text"><i ng-class="{ &#39;ui-grid-icon-up-dir&#39;: col.sort.direction == asc, &#39;ui-grid-icon-down-dir&#39;: col.sort.direction == desc, &#39;ui-grid-icon-blank&#39;: !col.sort.direction }" title="" aria-hidden="true" class="ui-grid-icon-blank"></i> <sub ui-grid-visible="isSortPriorityVisible()" class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span></div><!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false --><div role="button" tabindex="0" ui-grid-one-bind-id-grid="col.uid + &#39;-menu-button&#39;" class="ui-grid-column-menu-button ng-scope" ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false" ng-click="toggleMenu($event)" ng-class="{&#39;ui-grid-column-menu-button-last-col&#39;: isLastCol}" ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel" aria-haspopup="true" id="1573800442424-uiGrid-006W-menu-button" aria-label="列菜单"><i class="ui-grid-icon-angle-down" aria-hidden="true">&nbsp;</i></div><!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false --><div ui-grid-filter=""></div></div></div><!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid --><div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-006X" ng-repeat="col in colContainer.renderedColumns track by col.uid" ui-grid-header-cell="" col="col" render-index="$index"><div role="columnheader" ng-class="{ &#39;sortable&#39;: sortable }" ui-grid-one-bind-aria-labelledby-grid="col.uid + &#39;-header-text &#39; + col.uid + &#39;-sortdir-text&#39;" aria-sort="none" class="ng-scope sortable" aria-labelledby="1573800442424-uiGrid-006X-header-text 1573800442424-uiGrid-006X-sortdir-text"><div role="button" tabindex="0" class="ui-grid-cell-contents ui-grid-header-cell-primary-focus" col-index="renderIndex"><span class="ui-grid-header-cell-label ng-binding" ui-grid-one-bind-id-grid="col.uid + &#39;-header-text&#39;" id="1573800442424-uiGrid-006X-header-text">邮箱地址验认</span> <span ui-grid-one-bind-id-grid="col.uid + &#39;-sortdir-text&#39;" ui-grid-visible="col.sort.direction" aria-label="无序" class="ui-grid-invisible" id="1573800442424-uiGrid-006X-sortdir-text"><i ng-class="{ &#39;ui-grid-icon-up-dir&#39;: col.sort.direction == asc, &#39;ui-grid-icon-down-dir&#39;: col.sort.direction == desc, &#39;ui-grid-icon-blank&#39;: !col.sort.direction }" title="" aria-hidden="true" class="ui-grid-icon-blank"></i> <sub ui-grid-visible="isSortPriorityVisible()" class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span></div><!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false --><div role="button" tabindex="0" ui-grid-one-bind-id-grid="col.uid + &#39;-menu-button&#39;" class="ui-grid-column-menu-button ng-scope" ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false" ng-click="toggleMenu($event)" ng-class="{&#39;ui-grid-column-menu-button-last-col&#39;: isLastCol}" ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel" aria-haspopup="true" id="1573800442424-uiGrid-006X-menu-button" aria-label="列菜单"><i class="ui-grid-icon-angle-down" aria-hidden="true">&nbsp;</i></div><!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false --><div ui-grid-filter=""></div></div></div><!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid --><div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-006Y" ng-repeat="col in colContainer.renderedColumns track by col.uid" ui-grid-header-cell="" col="col" render-index="$index"><div role="columnheader" ng-class="{ &#39;sortable&#39;: sortable }" ui-grid-one-bind-aria-labelledby-grid="col.uid + &#39;-header-text &#39; + col.uid + &#39;-sortdir-text&#39;" aria-sort="none" class="ng-scope sortable" aria-labelledby="1573800442424-uiGrid-006Y-header-text 1573800442424-uiGrid-006Y-sortdir-text"><div role="button" tabindex="0" class="ui-grid-cell-contents ui-grid-header-cell-primary-focus" col-index="renderIndex"><span class="ui-grid-header-cell-label ng-binding" ui-grid-one-bind-id-grid="col.uid + &#39;-header-text&#39;" id="1573800442424-uiGrid-006Y-header-text">上次登录时间</span> <span ui-grid-one-bind-id-grid="col.uid + &#39;-sortdir-text&#39;" ui-grid-visible="col.sort.direction" aria-label="无序" class="ui-grid-invisible" id="1573800442424-uiGrid-006Y-sortdir-text"><i ng-class="{ &#39;ui-grid-icon-up-dir&#39;: col.sort.direction == asc, &#39;ui-grid-icon-down-dir&#39;: col.sort.direction == desc, &#39;ui-grid-icon-blank&#39;: !col.sort.direction }" title="" aria-hidden="true" class="ui-grid-icon-blank"></i> <sub ui-grid-visible="isSortPriorityVisible()" class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span></div><!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false --><div role="button" tabindex="0" ui-grid-one-bind-id-grid="col.uid + &#39;-menu-button&#39;" class="ui-grid-column-menu-button ng-scope" ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false" ng-click="toggleMenu($event)" ng-class="{&#39;ui-grid-column-menu-button-last-col&#39;: isLastCol}" ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel" aria-haspopup="true" id="1573800442424-uiGrid-006Y-menu-button" aria-label="列菜单"><i class="ui-grid-icon-angle-down" aria-hidden="true">&nbsp;</i></div><!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false --><div ui-grid-filter=""></div></div></div><!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid --><div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-006Z" ng-repeat="col in colContainer.renderedColumns track by col.uid" ui-grid-header-cell="" col="col" render-index="$index"><div role="columnheader" ng-class="{ &#39;sortable&#39;: sortable }" ui-grid-one-bind-aria-labelledby-grid="col.uid + &#39;-header-text &#39; + col.uid + &#39;-sortdir-text&#39;" aria-sort="none" class="ng-scope sortable" aria-labelledby="1573800442424-uiGrid-006Z-header-text 1573800442424-uiGrid-006Z-sortdir-text"><div role="button" tabindex="0" class="ui-grid-cell-contents ui-grid-header-cell-primary-focus" col-index="renderIndex"><span class="ui-grid-header-cell-label ng-binding" ui-grid-one-bind-id-grid="col.uid + &#39;-header-text&#39;" id="1573800442424-uiGrid-006Z-header-text">创建时间</span> <span ui-grid-one-bind-id-grid="col.uid + &#39;-sortdir-text&#39;" ui-grid-visible="col.sort.direction" aria-label="无序" class="ui-grid-invisible" id="1573800442424-uiGrid-006Z-sortdir-text"><i ng-class="{ &#39;ui-grid-icon-up-dir&#39;: col.sort.direction == asc, &#39;ui-grid-icon-down-dir&#39;: col.sort.direction == desc, &#39;ui-grid-icon-blank&#39;: !col.sort.direction }" title="" aria-hidden="true" class="ui-grid-icon-blank"></i> <sub ui-grid-visible="isSortPriorityVisible()" class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span></div><!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false --><div role="button" tabindex="0" ui-grid-one-bind-id-grid="col.uid + &#39;-menu-button&#39;" class="ui-grid-column-menu-button ng-scope ui-grid-column-menu-button-last-col" ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false" ng-click="toggleMenu($event)" ng-class="{&#39;ui-grid-column-menu-button-last-col&#39;: isLastCol}" ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel" aria-haspopup="true" id="1573800442424-uiGrid-006Z-menu-button" aria-label="列菜单"><i class="ui-grid-icon-angle-down" aria-hidden="true">&nbsp;</i></div><!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false --><div ui-grid-filter=""></div></div></div><!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid --></div></div></div></div></div></div><div role="rowgroup" class="ui-grid-viewport ng-isolate-scope" ng-style="colContainer.getViewportStyle()" ui-grid-viewport="" style="overflow: auto;"><!-- tbody --><div class="ui-grid-canvas"><!-- ngRepeat: (rowRenderIndex, row) in rowContainer.renderedRows track by $index --><div ng-repeat="(rowRenderIndex, row) in rowContainer.renderedRows track by $index" class="ui-grid-row ng-scope" ng-style="Viewport.rowStyle(rowRenderIndex)"><div role="row" ui-grid-row="row" row-render-index="rowRenderIndex" class="ng-isolate-scope"><!-- ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006T" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-scope">  <div class="btn-group dropdown" uib-dropdown="" dropdown-append-to-body="">    <button class="btn btn-xs btn-primary blue dropdown-toggle" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i> 操作 <span class="caret"></span></button>      <ul uib-dropdown-menu="" class="dropdown-menu" style="top: 359px; display: none; left: 301px; right: auto;">      <li><!-- ngIf: grid.appScope.permissions.impersonation && row.entity.id != grid.appScope.currentUserId --></li>      <li><!-- ngIf: grid.appScope.permissions.edit --><a ng-if="grid.appScope.permissions.edit" ng-click="grid.appScope.editUser(row.entity)" class="ng-scope">修改</a><!-- end ngIf: grid.appScope.permissions.edit --></li>      <li><!-- ngIf: grid.appScope.permissions.changePermissions --><a ng-if="grid.appScope.permissions.changePermissions" ng-click="grid.appScope.editPermissions(row.entity)" class="ng-scope">权限</a><!-- end ngIf: grid.appScope.permissions.changePermissions --></li>      <li><a ng-click="grid.appScope.unlockUser(row.entity)">Unlock</a></li>      <li><!-- ngIf: grid.appScope.permissions.delete --><a ng-if="grid.appScope.permissions.delete" ng-click="grid.appScope.deleteUser(row.entity)" class="ng-scope">删除</a><!-- end ngIf: grid.appScope.permissions.delete --></li>    </ul></div></div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006U" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">  <!-- ngIf: row.entity.profilePictureId -->  <!-- ngIf: !row.entity.profilePictureId --><img ng-if="!row.entity.profilePictureId" src="./AbpZeroTemplate_files/default-profile-picture.png" width="22" height="22" class="img-rounded ng-scope"><!-- end ngIf: !row.entity.profilePictureId -->  admin &nbsp;</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006V" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">admin</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006W" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">admin@aspnetzero.com</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006X" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-scope">  <span ng-show="row.entity.isEmailConfirmed" class="label label-success">是</span>  <span ng-show="!row.entity.isEmailConfirmed" class="label label-default ng-hide">否</span></div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006Y" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">2019年11月15日</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006Z" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">2018年1月16日</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --></div></div><!-- end ngRepeat: (rowRenderIndex, row) in rowContainer.renderedRows track by $index --><div ng-repeat="(rowRenderIndex, row) in rowContainer.renderedRows track by $index" class="ui-grid-row ng-scope" ng-style="Viewport.rowStyle(rowRenderIndex)"><div role="row" ui-grid-row="row" row-render-index="rowRenderIndex" class="ng-isolate-scope"><!-- ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006T" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-scope">  <div class="btn-group dropdown" uib-dropdown="" dropdown-append-to-body="">    <button class="btn btn-xs btn-primary blue dropdown-toggle" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i> 操作 <span class="caret"></span></button>      <ul uib-dropdown-menu="" class="dropdown-menu" style="top: 389px; display: none; left: 301px; right: auto;">      <li><!-- ngIf: grid.appScope.permissions.impersonation && row.entity.id != grid.appScope.currentUserId --><a ng-if="grid.appScope.permissions.impersonation &amp;&amp; row.entity.id != grid.appScope.currentUserId" ng-click="grid.appScope.impersonate(row.entity)" class="ng-scope">Login as this user</a><!-- end ngIf: grid.appScope.permissions.impersonation && row.entity.id != grid.appScope.currentUserId --></li>      <li><!-- ngIf: grid.appScope.permissions.edit --><a ng-if="grid.appScope.permissions.edit" ng-click="grid.appScope.editUser(row.entity)" class="ng-scope">修改</a><!-- end ngIf: grid.appScope.permissions.edit --></li>      <li><!-- ngIf: grid.appScope.permissions.changePermissions --><a ng-if="grid.appScope.permissions.changePermissions" ng-click="grid.appScope.editPermissions(row.entity)" class="ng-scope">权限</a><!-- end ngIf: grid.appScope.permissions.changePermissions --></li>      <li><a ng-click="grid.appScope.unlockUser(row.entity)">Unlock</a></li>      <li><!-- ngIf: grid.appScope.permissions.delete --><a ng-if="grid.appScope.permissions.delete" ng-click="grid.appScope.deleteUser(row.entity)" class="ng-scope">删除</a><!-- end ngIf: grid.appScope.permissions.delete --></li>    </ul></div></div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006U" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">  <!-- ngIf: row.entity.profilePictureId -->  <!-- ngIf: !row.entity.profilePictureId --><img ng-if="!row.entity.profilePictureId" src="./AbpZeroTemplate_files/default-profile-picture.png" width="22" height="22" class="img-rounded ng-scope"><!-- end ngIf: !row.entity.profilePictureId -->  1703082001 &nbsp;</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006V" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">王维</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006W" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">123456@qq.com</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006X" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-scope">  <span ng-show="row.entity.isEmailConfirmed" class="label label-success ng-hide">是</span>  <span ng-show="!row.entity.isEmailConfirmed" class="label label-default">否</span></div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006Y" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">-</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006Z" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">2019年11月15日</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --></div></div><!-- end ngRepeat: (rowRenderIndex, row) in rowContainer.renderedRows track by $index --><div ng-repeat="(rowRenderIndex, row) in rowContainer.renderedRows track by $index" class="ui-grid-row ng-scope" ng-style="Viewport.rowStyle(rowRenderIndex)"><div role="row" ui-grid-row="row" row-render-index="rowRenderIndex" class="ng-isolate-scope"><!-- ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006T" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-scope">  <div class="btn-group dropdown" uib-dropdown="" dropdown-append-to-body="">    <button class="btn btn-xs btn-primary blue dropdown-toggle" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i> 操作 <span class="caret"></span></button>      <ul uib-dropdown-menu="" class="dropdown-menu" style="top: 419px; display: none; left: 301px; right: auto;">      <li><!-- ngIf: grid.appScope.permissions.impersonation && row.entity.id != grid.appScope.currentUserId --><a ng-if="grid.appScope.permissions.impersonation &amp;&amp; row.entity.id != grid.appScope.currentUserId" ng-click="grid.appScope.impersonate(row.entity)" class="ng-scope">Login as this user</a><!-- end ngIf: grid.appScope.permissions.impersonation && row.entity.id != grid.appScope.currentUserId --></li>      <li><!-- ngIf: grid.appScope.permissions.edit --><a ng-if="grid.appScope.permissions.edit" ng-click="grid.appScope.editUser(row.entity)" class="ng-scope">修改</a><!-- end ngIf: grid.appScope.permissions.edit --></li>      <li><!-- ngIf: grid.appScope.permissions.changePermissions --><a ng-if="grid.appScope.permissions.changePermissions" ng-click="grid.appScope.editPermissions(row.entity)" class="ng-scope">权限</a><!-- end ngIf: grid.appScope.permissions.changePermissions --></li>      <li><a ng-click="grid.appScope.unlockUser(row.entity)">Unlock</a></li>      <li><!-- ngIf: grid.appScope.permissions.delete --><a ng-if="grid.appScope.permissions.delete" ng-click="grid.appScope.deleteUser(row.entity)" class="ng-scope">删除</a><!-- end ngIf: grid.appScope.permissions.delete --></li>    </ul></div></div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006U" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">  <!-- ngIf: row.entity.profilePictureId -->  <!-- ngIf: !row.entity.profilePictureId --><img ng-if="!row.entity.profilePictureId" src="./AbpZeroTemplate_files/default-profile-picture.png" width="22" height="22" class="img-rounded ng-scope"><!-- end ngIf: !row.entity.profilePictureId -->  1703082002 &nbsp;</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006V" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">张一山</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006W" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">zhang@163.com</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006X" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-scope">  <span ng-show="row.entity.isEmailConfirmed" class="label label-success ng-hide">是</span>  <span ng-show="!row.entity.isEmailConfirmed" class="label label-default">否</span></div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006Y" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">-</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006Z" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">2019年11月15日</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --></div></div><!-- end ngRepeat: (rowRenderIndex, row) in rowContainer.renderedRows track by $index --><div ng-repeat="(rowRenderIndex, row) in rowContainer.renderedRows track by $index" class="ui-grid-row ng-scope" ng-style="Viewport.rowStyle(rowRenderIndex)"><div role="row" ui-grid-row="row" row-render-index="rowRenderIndex" class="ng-isolate-scope"><!-- ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006T" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-scope">  <div class="btn-group dropdown" uib-dropdown="" dropdown-append-to-body="">    <button class="btn btn-xs btn-primary blue dropdown-toggle" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i> 操作 <span class="caret"></span></button>      <ul uib-dropdown-menu="" class="dropdown-menu" style="top: 449px; display: none; left: 301px; right: auto;">      <li><!-- ngIf: grid.appScope.permissions.impersonation && row.entity.id != grid.appScope.currentUserId --><a ng-if="grid.appScope.permissions.impersonation &amp;&amp; row.entity.id != grid.appScope.currentUserId" ng-click="grid.appScope.impersonate(row.entity)" class="ng-scope">Login as this user</a><!-- end ngIf: grid.appScope.permissions.impersonation && row.entity.id != grid.appScope.currentUserId --></li>      <li><!-- ngIf: grid.appScope.permissions.edit --><a ng-if="grid.appScope.permissions.edit" ng-click="grid.appScope.editUser(row.entity)" class="ng-scope">修改</a><!-- end ngIf: grid.appScope.permissions.edit --></li>      <li><!-- ngIf: grid.appScope.permissions.changePermissions --><a ng-if="grid.appScope.permissions.changePermissions" ng-click="grid.appScope.editPermissions(row.entity)" class="ng-scope">权限</a><!-- end ngIf: grid.appScope.permissions.changePermissions --></li>      <li><a ng-click="grid.appScope.unlockUser(row.entity)">Unlock</a></li>      <li><!-- ngIf: grid.appScope.permissions.delete --><a ng-if="grid.appScope.permissions.delete" ng-click="grid.appScope.deleteUser(row.entity)" class="ng-scope">删除</a><!-- end ngIf: grid.appScope.permissions.delete --></li>    </ul></div></div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006U" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">  <!-- ngIf: row.entity.profilePictureId -->  <!-- ngIf: !row.entity.profilePictureId --><img ng-if="!row.entity.profilePictureId" src="./AbpZeroTemplate_files/default-profile-picture.png" width="22" height="22" class="img-rounded ng-scope"><!-- end ngIf: !row.entity.profilePictureId -->  1703082201 &nbsp;</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006V" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">张赢</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006W" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">1234565@qq.com</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006X" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-scope">  <span ng-show="row.entity.isEmailConfirmed" class="label label-success ng-hide">是</span>  <span ng-show="!row.entity.isEmailConfirmed" class="label label-default">否</span></div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006Y" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">-</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --><div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell ng-scope ui-grid-coluiGrid-006Z" ng-class="{ &#39;ui-grid-row-header-cell&#39;: col.isRowHeader, &#39;text-muted&#39;: !row.entity.isActive }" ui-grid-cell=""><div class="ui-grid-cell-contents ng-binding ng-scope">2019年11月15日</div></div><!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name --></div></div><!-- end ngRepeat: (rowRenderIndex, row) in rowContainer.renderedRows track by $index --></div></div><!-- ngIf: colContainer.needsHScrollbarPlaceholder() --><!-- ngIf: grid.options.showColumnFooter --></div><!-- ngIf: grid.hasRightContainer() --><!-- ngIf: grid.options.showGridFooter --><!-- ngIf: grid.options.enableColumnMenus --><div class="ui-grid-column-menu ng-scope" ui-grid-column-menu="" ng-if="grid.options.enableColumnMenus"><!-- ngIf: shown --></div><!-- end ngIf: grid.options.enableColumnMenus --><div ng-transclude=""></div></div><div role="contentinfo" class="ui-grid-pager-panel ng-scope" ui-grid-pager="" ng-show="grid.options.enablePaginationControls"><div role="navigation" class="ui-grid-pager-container"><div role="menubar" class="ui-grid-pager-control"><button type="button" role="menuitem" class="ui-grid-pager-first" ui-grid-one-bind-title="aria.pageToFirst" ui-grid-one-bind-aria-label="aria.pageToFirst" ng-click="pageFirstPageClick()" ng-disabled="cantPageBackward()" title="第一页" aria-label="第一页" disabled="disabled"><div ng-class="grid.isRTL() ? &#39;last-triangle&#39; : &#39;first-triangle&#39;" class="first-triangle"><div ng-class="grid.isRTL() ? &#39;last-bar-rtl&#39; : &#39;first-bar&#39;" class="first-bar"></div></div></button> <button type="button" role="menuitem" class="ui-grid-pager-previous" ui-grid-one-bind-title="aria.pageBack" ui-grid-one-bind-aria-label="aria.pageBack" ng-click="pagePreviousPageClick()" ng-disabled="cantPageBackward()" title="上一页" aria-label="上一页" disabled="disabled"><div ng-class="grid.isRTL() ? &#39;last-triangle prev-triangle&#39; : &#39;first-triangle prev-triangle&#39;" class="first-triangle prev-triangle"></div></button> <input type="number" ui-grid-one-bind-title="aria.pageSelected" ui-grid-one-bind-aria-label="aria.pageSelected" class="ui-grid-pager-control-input ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-min ng-valid-max ng-valid-required" ng-model="grid.options.paginationCurrentPage" min="1" max="1" required="" title="当前页" aria-label="当前页"> <span class="ui-grid-pager-max-pages-number ng-binding" ng-show="paginationApi.getTotalPages() &gt; 0"><abbr ui-grid-one-bind-title="paginationOf" title="共">/</abbr> 1</span> <button type="button" role="menuitem" class="ui-grid-pager-next" ui-grid-one-bind-title="aria.pageForward" ui-grid-one-bind-aria-label="aria.pageForward" ng-click="pageNextPageClick()" ng-disabled="cantPageForward()" title="下一页" aria-label="下一页" disabled="disabled"><div ng-class="grid.isRTL() ? &#39;first-triangle next-triangle&#39; : &#39;last-triangle next-triangle&#39;" class="last-triangle next-triangle"></div></button> <button type="button" role="menuitem" class="ui-grid-pager-last" ui-grid-one-bind-title="aria.pageToLast" ui-grid-one-bind-aria-label="aria.pageToLast" ng-click="pageLastPageClick()" ng-disabled="cantPageToLast()" title="最后一页" aria-label="最后一页" disabled="disabled"><div ng-class="grid.isRTL() ? &#39;first-triangle&#39; : &#39;last-triangle&#39;" class="last-triangle"><div ng-class="grid.isRTL() ? &#39;first-bar-rtl&#39; : &#39;last-bar&#39;" class="last-bar"></div></div></button></div><!-- ngIf: grid.options.paginationPageSizes.length > 1 && !grid.options.useCustomPagination --><div class="ui-grid-pager-row-count-picker ng-scope" ng-if="grid.options.paginationPageSizes.length &gt; 1 &amp;&amp; !grid.options.useCustomPagination"><select ui-grid-one-bind-aria-labelledby-grid="&#39;items-per-page-label&#39;" ng-model="grid.options.paginationPageSize" ng-options="o as o for o in grid.options.paginationPageSizes" class="ng-pristine ng-untouched ng-valid ng-not-empty" aria-labelledby="1573800442424-items-per-page-label"><option label="10" value="number:10" selected="selected">10</option><option label="20" value="number:20">20</option><option label="50" value="number:50">50</option><option label="100" value="number:100">100</option></select><span ui-grid-one-bind-id-grid="&#39;items-per-page-label&#39;" class="ui-grid-pager-row-count-label ng-binding" id="1573800442424-items-per-page-label">&nbsp;行每页</span></div><!-- end ngIf: grid.options.paginationPageSizes.length > 1 && !grid.options.useCustomPagination --><!-- ngIf: grid.options.paginationPageSizes.length <= 1 --></div><div class="ui-grid-pager-count-container"><div class="ui-grid-pager-count"><span ng-show="grid.options.totalItems &gt; 0" class="ng-binding">1 <abbr ui-grid-one-bind-title="paginationThrough" title="至">-</abbr> 4 共 4 行</span></div></div></div></div>
+            </div>
+        </div>
+    </div>
+</div></div>
+            </div>
+        </div>
+            <!-- ngInclude: '~/App/common/views/layout/chatbar.cshtml' --><div data-ng-include="&#39;~/App/common/views/layout/chatbar.cshtml&#39;" data-ng-controller="common.views.layout.chatbar as vm" class="ng-scope"><!-- BEGIN QUICK SIDEBAR -->
+<div class="page-quick-sidebar-wrapper ng-scope" data-close-on-body-click="false">
+    <a href="javascript:;" class="page-quick-sidebar-pinner" ng-click="vm.chat.reversePinned()">
+        <i class="icon-pin unpinned" ng-class="{&#39;pinned&#39;:vm.chat.pinned, &#39;unpinned&#39;:!vm.chat.pinned}"></i>
+    </a>
+    <a href="javascript:;" class="page-quick-sidebar-toggler">
+        <i class="icon-close"></i>
+    </a>
+    <div class="page-quick-sidebar">
+        <div class="tab-content">
+            <div class="tab-pane active page-quick-sidebar-chat" id="quick_sidebar_tab_1">
+                <div class="page-quick-sidebar-list" style="position: relative; overflow: hidden; width: auto; height: 920px;"><div class="page-quick-sidebar-chat-users" data-rail-color="#ddd" data-wrapper-class="page-quick-sidebar-list" data-height="920" data-initialized="1" style="overflow: hidden; width: auto; height: 920px;">
+                    <div class="row">
+                        <div class="col-md-12" style="padding-top: 30px; margin: 5px; padding-right: 25px;">
+                            <div class="input-icon input-icon-sm right">
+                                <!-- ngIf: vm.chat.tenantToTenantChatAllowed || vm.chat.tenantToHostChatAllowed -->
+                                <input type="text" class="form-control input-sm ng-pristine ng-untouched ng-valid ng-empty" placeholder="Filter/Add user" ng-model="vm.chat.user.userNameFilter">
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="margin: 5px; padding-right: 25px;">
+                            <!-- ngIf: vm.chat.user.userNameFilter.length -->
+                        </div>
+                    </div>
+                    <div class="panel-group accordion" id="accFriendUsers">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a javascript:;="" class="accordion-toggle accordion-toggle-styled" data-toggle="collapse" data-parent="#accFriendUsers" data-target="#accFriendUsers_content"> Friends </a>
+                                </h4>
+                            </div>
+                            <div id="accFriendUsers_content" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <!-- ngRepeat: friend in vm.chat.getFilteredFriends(vm.consts.friendshipState.accepted, vm.chat.user.userNameFilter) -->
+                                    <!-- ngIf: (vm.chat.friends|filter:{state: vm.consts.friendshipState.accepted}).length == 0 --><p ng-if="(vm.chat.friends|filter:{state: vm.consts.friendshipState.accepted}).length == 0" class="ng-scope">You don't have any friends. Write a username to above input box and click "Add Friend" button.</p><!-- end ngIf: (vm.chat.friends|filter:{state: vm.consts.friendshipState.accepted}).length == 0 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group accordion" id="accBannedUsers">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a javascript:;="" class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#accBannedUsers" data-target="#accBannedUsers_content"> Blocked Users </a>
+                                </h4>
+                            </div>
+                            <div id="accBannedUsers_content" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <!-- ngRepeat: friend in vm.chat.getFilteredFriends(vm.consts.friendshipState.blocked, vm.chat.user.userNameFilter) -->
+                                    <!-- ngIf: (vm.chat.friends|filter:{state: vm.consts.friendshipState.blocked}).length == 0 --><p ng-if="(vm.chat.friends|filter:{state: vm.consts.friendshipState.blocked}).length == 0" class="ng-scope">You don't have any blocked users. In order to block a friend, select a friend and select block from actions dropdown.</p><!-- end ngIf: (vm.chat.friends|filter:{state: vm.consts.friendshipState.blocked}).length == 0 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="slimScrollBar" style="background: rgb(187, 187, 187); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 920px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(221, 221, 221); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                <div class="page-quick-sidebar-item">
+                    <div class="page-quick-sidebar-chat-user">
+                        <div class="page-quick-sidebar-nav">
+                            <a href="javascript:;" class="page-quick-sidebar-back-to-list">
+                                <i class="icon-arrow-left"></i>Back
+                            </a>
+                        </div>
+                        <div class="selected-chat-user">
+                            <div class="selected-chat-user-image">
+                                <img class="media-object">
+                                <span class="contact-status offline" ng-class="{&#39;online&#39;:vm.chat.selectedUser.isOnline, &#39;offline&#39;:!vm.chat.selectedUser.isOnline}"></span>
+                            </div>
+                            <h5 class="ng-binding">.\undefined</h5>
+                            <div class="actions">
+                                <div class="btn-group">
+                                    <a class="btn green btn-circle btn-sm" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false">
+                                        <i class="icon-wrench"></i>
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <!-- ngIf: vm.chat.selectedUser.state != vm.consts.friendshipState.blocked --><li ng-if="vm.chat.selectedUser.state != vm.consts.friendshipState.blocked" class="ng-scope">
+                                            <a href="javascript:;" ng-click="vm.chat.user.block(vm.chat.selectedUser)">
+                                                <i class="fa fa-ban"></i>
+                                                Block user
+                                            </a>
+                                        </li><!-- end ngIf: vm.chat.selectedUser.state != vm.consts.friendshipState.blocked -->
+                                        <!-- ngIf: vm.chat.selectedUser.state == vm.consts.friendshipState.blocked -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 717px;"><div class="page-quick-sidebar-chat-user-messages" data-height="717" data-initialized="1" style="overflow: hidden; width: auto; height: 717px;">
+                            <!-- ngRepeat: message in vm.chat.selectedUser.messages -->
+                        </div><div class="slimScrollBar" style="background: rgb(187, 187, 187); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 717px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                        <div class="page-quick-sidebar-chat-user-form">
+                            <form name="chatMessageForm" class="ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength">
+                                <!-- ngIf: vm.chat.selectedUser.state === vm.consts.friendshipState.blocked -->
+                                <!-- ngIf: vm.chat.selectedUser.state !== vm.consts.friendshipState.blocked --><div class="input-group ng-scope" ng-if="vm.chat.selectedUser.state !== vm.consts.friendshipState.blocked">
+                                    <textarea id="ChatMessage" type="text" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength" rows="3" placeholder="Type a message here..." ng-model="vm.chat.message" enter-key="vm.chat.sendMessage()" ng-disabled="vm.chat.selectedUser.state == vm.consts.friendshipState.blocked" focus-if="vm.chat.selectedUser" focus-delay="100" ng-maxlength="4096" required=""></textarea>
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn green send-chat-message" ng-click="vm.chat.sendMessage()" ng-disabled="vm.chat.selectedUser.state == vm.consts.friendshipState.blocked || chatMessageForm.$invalid || vm.chat.sendingMessage" disabled="disabled">
+                                            <i class="icon-paper-plane"></i>
+                                        </button>
+                                    </div>
+                                </div><!-- end ngIf: vm.chat.selectedUser.state !== vm.consts.friendshipState.blocked -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END QUICK SIDEBAR --></div>
+    </div>
+
+    <!-- ngInclude: '~/App/common/views/layout/footer.cshtml' --><div data-ng-include="&#39;~/App/common/views/layout/footer.cshtml&#39;" data-ng-controller="common.views.layout.footer as vm" class="page-footer ng-scope"><div class="page-footer-inner ng-scope">
+    <span class="text-muted">
+        <small class="ng-binding">
+            AbpZeroTemplate <br>
+            v5.0.0.0 [20191115]
+        </small>
+    </span>
+</div>
+<div class="scroll-to-top ng-scope">
+    <i class="icon-arrow-up"></i>
+</div></div>
+    <!--[if lt IE 9]>
+        <script src="~/libs/respond/respond.min.js"></script>
+        <script src="~/libs/html5shiv/html5shiv.js"></script>
+        <script src="~/libs/excanvas/excanvas.min.js"></script>
+    <![endif]-->
+    <script src="./AbpZeroTemplate_files/json2.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/jquery.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/jquery-migrate.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/bootstrap.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/bootstrap-hover-dropdown.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/jquery.slimscroll.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/jquery.blockui.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/js.cookie.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/jquery.uniform.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/jquery.signalR-2.2.2.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/localforage.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/morris.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/raphael-min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/jquery.sparkline.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/jquery.color.js.下载"></script>
+<script src="./AbpZeroTemplate_files/jquery.Jcrop.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/jquery.timeago.js.下载"></script>
+<script src="./AbpZeroTemplate_files/jstree.js.下载"></script>
+<script src="./AbpZeroTemplate_files/bootstrap-switch.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/spin.js.下载"></script>
+<script src="./AbpZeroTemplate_files/jquery.spin.js.下载"></script>
+<script src="./AbpZeroTemplate_files/sweetalert.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/push.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/toastr.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/moment-with-locales.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/moment-timezone-with-data.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/daterangepicker.js.下载"></script>
+<script src="./AbpZeroTemplate_files/bootstrap-select.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/underscore.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/angular.js.下载"></script>
+<script src="./AbpZeroTemplate_files/angular-sanitize.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/angular-touch.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/angular-ui-router.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/ui-utils.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/ui-bootstrap-tpls.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/ui-grid.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/ocLazyLoad.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/angular-file-upload.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/angular-daterangepicker.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/angular-moment.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/angular-bootstrap-switch.min.js.下载"></script>
+<script src="./AbpZeroTemplate_files/abp.js.下载"></script>
+<script src="./AbpZeroTemplate_files/abp.jquery.js.下载"></script>
+<script src="./AbpZeroTemplate_files/abp.toastr.js.下载"></script>
+<script src="./AbpZeroTemplate_files/abp.blockUI.js.下载"></script>
+<script src="./AbpZeroTemplate_files/abp.spin.js.下载"></script>
+<script src="./AbpZeroTemplate_files/abp.sweet-alert.js.下载"></script>
+<script src="./AbpZeroTemplate_files/abp.moment.js.下载"></script>
+<script src="./AbpZeroTemplate_files/abp.ng.js.下载"></script>
+
+
+    <script>
+        abp.localization.defaultSourceName = 'AbpZeroTemplate';
+        moment.locale('zh-CN'); //Localizing moment.js
+    </script>
+
+    <script src="./AbpZeroTemplate_files/angular-locale_zh-cn.js.下载" type="text/javascript"></script>
+    <script src="./AbpZeroTemplate_files/defaults-zh_CN.js.下载" type="text/javascript"></script>
+    <script src="./AbpZeroTemplate_files/jquery.timeago.en.js.下载" type="text/javascript"></script>
+
+    <!-- Dynamic scripts of ABP system (They are created on runtime and can not be bundled) -->
+    <script src="./AbpZeroTemplate_files/GetAll"></script>
+    <script src="./AbpZeroTemplate_files/GetAll(1)"></script>
+    <script src="./AbpZeroTemplate_files/GetScripts" type="text/javascript"></script>
+
+    <!-- SignalR scripts -->
+    <script src="./AbpZeroTemplate_files/hubs"></script>
+    <script src="./AbpZeroTemplate_files/abp.signalr.js.下载" type="text/javascript"></script>
+
+    <script src="./AbpZeroTemplate_files/app.js.下载"></script>
+<script src="./AbpZeroTemplate_files/layout.js.下载"></script>
+<script src="./AbpZeroTemplate_files/quick-sidebar.js.下载"></script>
+
+    <script src="./AbpZeroTemplate_files/appUserNotificationHelper.js.下载"></script>
+<script src="./AbpZeroTemplate_files/consts.js.下载"></script>
+<script src="./AbpZeroTemplate_files/helpers.js.下载"></script>
+<script src="./AbpZeroTemplate_files/jquery-custom.js.下载"></script>
+<script src="./AbpZeroTemplate_files/jquery-validation-custom.js.下载"></script>
+<script src="./AbpZeroTemplate_files/librarySettings.js.下载"></script>
+<script src="./AbpZeroTemplate_files/ModalManager.js.下载"></script>
+<script src="./AbpZeroTemplate_files/passwordComplexityHelper.js.下载"></script>
+<script src="./AbpZeroTemplate_files/utils.js.下载"></script>
+<script src="./AbpZeroTemplate_files/chat.js.下载"></script>
+<script src="./AbpZeroTemplate_files/chat.signalr.js.下载"></script>
+<script src="./AbpZeroTemplate_files/localStorage.js.下载"></script>
+<script src="./AbpZeroTemplate_files/localStorage.localForage.js.下载"></script>
+
+    <script src="./AbpZeroTemplate_files/app.js(1).下载"></script>
+<script src="./AbpZeroTemplate_files/autoFocus.js.下载"></script>
+<script src="./AbpZeroTemplate_files/busyIf.js.下载"></script>
+<script src="./AbpZeroTemplate_files/buttonBusy.js.下载"></script>
+<script src="./AbpZeroTemplate_files/enterKey.js.下载"></script>
+<script src="./AbpZeroTemplate_files/focusIf.js.下载"></script>
+<script src="./AbpZeroTemplate_files/passwordComplexity.js.下载"></script>
+<script src="./AbpZeroTemplate_files/permissionCombo.js.下载"></script>
+<script src="./AbpZeroTemplate_files/permissionTree.js.下载"></script>
+<script src="./AbpZeroTemplate_files/roleCombo.js.下载"></script>
+<script src="./AbpZeroTemplate_files/timezoneCombo.js.下载"></script>
+<script src="./AbpZeroTemplate_files/directives.js.下载"></script>
+<script src="./AbpZeroTemplate_files/momentjs-filters.js.下载"></script>
+<script src="./AbpZeroTemplate_files/appSession.js.下载"></script>
+<script src="./AbpZeroTemplate_files/appUserNotificationHelper.js(1).下载"></script>
+<script src="./AbpZeroTemplate_files/detailModal.js.下载"></script>
+<script src="./AbpZeroTemplate_files/index.js.下载"></script>
+<script src="./AbpZeroTemplate_files/lookupModal.js.下载"></script>
+<script src="./AbpZeroTemplate_files/createOrEditModal.js.下载"></script>
+<script src="./AbpZeroTemplate_files/editTextModal.js.下载"></script>
+<script src="./AbpZeroTemplate_files/index.js(1).下载"></script>
+<script src="./AbpZeroTemplate_files/texts.js.下载"></script>
+<script src="./AbpZeroTemplate_files/chatbar.js.下载"></script>
+<script src="./AbpZeroTemplate_files/footer.js.下载"></script>
+<script src="./AbpZeroTemplate_files/header.js.下载"></script>
+<script src="./AbpZeroTemplate_files/layout.js(1).下载"></script>
+<script src="./AbpZeroTemplate_files/sidebar.js.下载"></script>
+<script src="./AbpZeroTemplate_files/index.js(2).下载"></script>
+<script src="./AbpZeroTemplate_files/settingsModal.js.下载"></script>
+<script src="./AbpZeroTemplate_files/createOrEditUnitModal.js.下载"></script>
+<script src="./AbpZeroTemplate_files/index.js(3).下载"></script>
+<script src="./AbpZeroTemplate_files/changePassword.js.下载"></script>
+<script src="./AbpZeroTemplate_files/changePicture.js.下载"></script>
+<script src="./AbpZeroTemplate_files/linkAccountModal.js.下载"></script>
+<script src="./AbpZeroTemplate_files/linkedAccountsModal.js.下载"></script>
+<script src="./AbpZeroTemplate_files/mySettingsModal.js.下载"></script>
+<script src="./AbpZeroTemplate_files/createOrEditModal.js(1).下载"></script>
+<script src="./AbpZeroTemplate_files/index.js(4).下载"></script>
+<script src="./AbpZeroTemplate_files/createOrEditModal.js(2).下载"></script>
+<script src="./AbpZeroTemplate_files/index.js(5).下载"></script>
+<script src="./AbpZeroTemplate_files/loginAttemptsModal.js.下载"></script>
+<script src="./AbpZeroTemplate_files/permissionsModal.js.下载"></script>
+<script src="./AbpZeroTemplate_files/index.js(6).下载"></script>
+<script src="./AbpZeroTemplate_files/index.js(7).下载"></script>
+<script src="./AbpZeroTemplate_files/modal.js.下载"></script>
+<script src="./AbpZeroTemplate_files/featureTree.js.下载"></script>
+<script src="./AbpZeroTemplate_files/createOrEditModal.js(3).下载"></script>
+<script src="./AbpZeroTemplate_files/index.js(8).下载"></script>
+<script src="./AbpZeroTemplate_files/index.js(9).下载"></script>
+<script src="./AbpZeroTemplate_files/index.js(10).下载"></script>
+<script src="./AbpZeroTemplate_files/createModal.js.下载"></script>
+<script src="./AbpZeroTemplate_files/editModal.js.下载"></script>
+<script src="./AbpZeroTemplate_files/featuresModal.js.下载"></script>
+<script src="./AbpZeroTemplate_files/index.js(11).下载"></script>
+<script src="./AbpZeroTemplate_files/index.js(12).下载"></script>
+<script src="./AbpZeroTemplate_files/index.js(13).下载"></script>
+
+
+</body></html>

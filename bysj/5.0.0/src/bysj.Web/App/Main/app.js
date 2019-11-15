@@ -56,6 +56,31 @@
                     templateUrl: '/App/Main/views/home/home.cshtml',
                     menu: 'Home' //Matches to name of 'Home' menu in bysjNavigationProvider
                 })
+                .state('approval', {
+                    url: '/',
+                    templateUrl: '/App/Main/views/home/home.cshtml',
+                    menu: 'Approval' //Matches to name of 'Home' menu in bysjNavigationProvider
+                })
+                .state('register', {
+                    url: '/',
+                    templateUrl: '/App/Main/views/home/home.cshtml',
+                    menu: 'Register' //Matches to name of 'Home' menu in bysjNavigationProvider
+                })
+                .state('class', {
+                    url: '/',
+                    templateUrl: '/App/Main/views/class/index.cshtml',
+                    menu: 'Class' //Matches to name of 'Home' menu in bysjNavigationProvider
+                })
+                .state('suggest', {
+                    url: '/',
+                    templateUrl: '/App/Main/views/home/home.cshtml',
+                    menu: 'Suggest' //Matches to name of 'Home' menu in bysjNavigationProvider
+                })
+                .state('files', {
+                    url: '/',
+                    templateUrl: '/App/Main/views/home/home.cshtml',
+                    menu: 'Files' //Matches to name of 'Home' menu in bysjNavigationProvider
+                })
                 .state('about', {
                     url: '/about',
                     templateUrl: '/App/Main/views/about/about.cshtml',

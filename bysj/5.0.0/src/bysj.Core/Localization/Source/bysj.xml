@@ -66,7 +66,7 @@
     <text name="Back">Back</text>
     <text name="SuccessfullyRegistered">Successfully registered</text>
     <text name="WaitingForEmailActivation">Your email address should be activated</text>
-    <text name="Roles">Roles</text>
+    <text name="Roles">角色</text>
 
     <text name="Actions">Actions</text>
     <text name="RoleName">Role Name</text>

@@ -503,6 +503,9 @@
     <Content Include="App\Main\views\roles\createModal.js" />
     <Content Include="App\Main\views\roles\index.js" />
     <Content Include="App\Main\views\tenants\editModal.js" />
+    <Content Include="App\Main\views\class\createModal.js" />
+    <Content Include="App\Main\views\class\editModal.js" />
+    <Content Include="App\Main\views\class\index.js" />
     <Content Include="App\Main\views\users\editModal.js" />
     <Content Include="App\Main\views\users\createModal.js" />
     <Content Include="App\Main\views\users\index.js" />
@@ -2735,6 +2738,9 @@
     <Content Include="Abp\Framework\styles\abp.mixings.css.map" />
     <Content Include="Abp\Framework\styles\abp.less" />
     <Content Include="Abp\Framework\styles\abp.css.map" />
+    <Content Include="App\Main\views\class\createModal.cshtml" />
+    <Content Include="App\Main\views\class\editModal.cshtml" />
+    <Content Include="App\Main\views\class\index.cshtml" />
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">

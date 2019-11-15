@@ -50,6 +50,60 @@ namespace bysj.Web
                 )
                 .AddItem(
                     new MenuItemDefinition(
+                        "Approval",
+                        L("Approval"),
+                        url: "#users",
+                        icon: "fa fa-tag",
+                        requiresAuthentication:true
+                    )
+                )
+                 .AddItem(
+                    new MenuItemDefinition(
+                        "Suggest",
+                        L("Suggest"),
+                        url: "#users",
+                        icon: "fa fa-tag",
+                        requiresAuthentication: true
+                    )
+                )
+                .AddItem(
+                    new MenuItemDefinition(
+                        "Register",
+                        L("Register"),
+                        url: "#users",
+                        icon: "fa fa-tag",
+                        requiresAuthentication: true
+                    )
+                )
+                .AddItem(
+                    new MenuItemDefinition(
+                        "Files",
+                        L("Files"),
+                        url: "#users",
+                        icon: "fa fa-tag",
+                        requiresAuthentication: true
+                    )
+                )
+                .AddItem(
+                    new MenuItemDefinition(
+                        "Report",
+                        L("Report"),
+                        url: "#users",
+                        icon: "fa fa-tag",
+                        requiresAuthentication: true
+                    )
+                )
+                 .AddItem(
+                    new MenuItemDefinition(
+                        "Class",
+                        L("Class"), 
+                        url: "#users",
+                        icon: "fa fa-tag",
+                        requiresAuthentication: true
+                    )
+                )
+                .AddItem(
+                    new MenuItemDefinition(
                         "About",
                         new LocalizableString("About", bysjConsts.LocalizationSourceName),
                         url: "#/about",

@@ -25,10 +25,11 @@
                         <tr>
                             <th>@L("UserName")</th>
                             <th>@L("FullName")</th>
+                            <th>性别</th>
+                            <th>手机号</th>
                             <th>@L("EmailAddress")</th>
-                            <th>
-                                <div style="text-align:center">@L("IsActive")</div>
-                            </th>
+                            <th>地址</th>
+                           
                             <th>@L("Actions")</th>
                         </tr>
                     </thead>
@@ -36,11 +37,11 @@
                         <tr ng-repeat="user in vm.users">
                             <td>{{user.userName}}</td>
                             <td>{{user.fullName}}</td>
+                            <td>男</td>
+                            <td>{{user.userName}}</td>
                             <td>{{user.emailAddress}}</td>
-                            <td align="center">
-                                <i class="material-icons" ng-if="user.isActive" style="color:green;">check_box</i>
-                                <i class="material-icons" ng-if="!user.isActive" style="color:red;">indeterminate_check_box</i>
-                            </td>
+                            <td>北京市朝阳区望京</td>
+                          
                             <td class="dropdown">
                                 <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                     <i class="material-icons">menu</i>

@@ -1,7 +1,7 @@
 ﻿@model bysj.Web.Models.LanguageSelectionViewModel
 @if (Model.Languages.Count > 1)
 {
-    <div class="language-switch-area">
+    <div class="language-switch-area" >
         @foreach (var languageInfo in Model.Languages)
         {
             <a href="@(ApplicationPath)AbpLocalization/ChangeCulture?cultureName=@(languageInfo.Name)&returnUrl=@(Request.Url)">

@@ -5,7 +5,7 @@
             <span aria-hidden="true">&times;</span>
         </button>
         <h4 class="modal-title">
-            <span>@L("CreateNewRole")</span>
+            <span>添加角色</span>
         </h4>
     </div>
     <div class="modal-body">
@@ -14,7 +14,7 @@
                 <div class="form-group form-float">
                     <div class="form-line">
                         <input id="rolename" type="text" name="RoleName" ng-model="vm.role.name" required maxlength="32" minlength="2" class="validate form-control">
-                        <label for="rolename" class="form-label">@L("RoleName")</label>
+                        <label for="rolename" class="form-label">角色名称</label>
                     </div>
                 </div>
             </div>
@@ -25,7 +25,7 @@
                 <div class="form-group form-float">
                     <div class="form-line">
                         <input id="displayname" type="text" name="DisplayName" ng-model="vm.role.displayName" required maxlength="32" minlength="2" class="validate form-control">
-                        <label for="displayname" class="form-label">@L("DisplayName")</label>
+                        <label for="displayname" class="form-label">显示名</label>
                     </div>
                 </div>
             </div>
@@ -36,13 +36,13 @@
                 <div class="form-group form-float">
                     <div class="form-line">
                         <textarea id="role-description" name="Description" ng-model="vm.role.description" class="validate form-control"></textarea>
-                        <label for="role-description" class="form-label">Role Description</label>
+                        <label for="role-description" class="form-label">注释</label>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row clearfix">
+        <div class="row clearfix" style="display:none">
             <div class="col-sm-12">
                 <h4>Permissions</h4>
                 <div class="col-sm-6" ng-repeat="permission in vm.permissions track by $index">
